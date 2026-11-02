@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="java.js"></script>
+</head>
+<body>
+    <header id="profile">
+        <h2 id="title">Welcome to My Portfolio</h2>
+        <h1 id="name">Amina Toleugazinova</h1>
+        <p id="headline" class="headline">Future Web Developer</p>
+        <p class="intro">Hi! I am a second year student of Astana IT University</p>
+        <button id="light">Light Theme</button>
+        <button id="dark">Dark Theme</button>
+        <button id="changeHeadline">Change Headline</button>
+    </header>
+
+    <div id="about">
+        <h2>About Me</h2>
+        <p>My name is Amina Toleugazinova. I am a 2nd year student of Astana IT University.</p>
+        <p id="status">Currently learning jQuery!</p>
+        <ul id="facts">
+            <li>I like dancing.</li>
+            <li>I like listening to music.</li>
+            <li>My goal is to become a developer.</li>
+        </ul>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <button id="toggle">Toggle</button>
+    </div>
+    
+    <div id="gallery">
+        <h2>Gallery</h2>
+        <img src="photo 1.jpg" class="pic" id="pic1" alt="Photo 1">
+        <img src="photo 2.jpg" class="pic" id="pic2" alt="Photo 2">
+        <img src="photo 3.jpg" class="pic" id="pic3" alt="Photo 3">
+        <img src="photo 4.jpg" class="pic" id="pic4" alt="Photo 4">
+        <img src="photo 5.jpg" class="pic" id="pic5" alt="Photo 5">
+        <img src="photo 6.jpg" class="pic" id="pic6" alt="Photo 6">
+        <br>
+        <button id="fadeIn">Fade In</button>
+        <button id="fadeOut">Fade Out</button>
+        <button id="fadeToggle">Fade Toggle</button>
+    </div>
+    
+    <div id="favorites">
+        <h2>My Favorites</h2>
+        <h3 class="heading">My Favorite Music</h3>
+        <div class="panel">luther - Kendrick Lamar, SZA</div>
+        <h3 class="heading">My Favorite Movie</h3>
+        <div class="panel">Charlie and the Chocolate Factory</div>
+        <h3 class="heading">My Favorite Subject</h3>
+        <div class="panel">Mathematics</div>
+        <button id="openAll">Open All</button>
+        <button id="closeAll">Close All</button>
+    </div>
+    
+    <div id="skillsSection">
+        <h2>Technical Skills</h2>
+        <ul id="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+        </ul>
+        <input type="text" id="skillInput" placeholder="Enter a skill">
+        <button id="addSkill">Add Skill</button>
+        <button id="prependSkill">Prepend Skill</button>
+        <button id="removeSkill">Remove Skill</button>
+        <p id="error"></p>
+    </div>
+    
+    <div id="links">
+        <h2>My Link</h2>
+        <a href="https://www.instagram.com/toleugazinova_as?psln=MTFwdjJ5ZXNwcm9icw==" id="social" target="_blank">Instagram</a>
+        <br><br>
+        <button id="changeLink">Change Link</button>
+    </div>
+    
+    <div id="formSection">
+        <h2>Contact Form</h2>
+        <form id="form">
+            <label>Name: </label>
+            <input type="text" id="nameInput" placeholder="Enter Name">
+            <label>Email: </label>
+            <input type="email" id="emailInput" placeholder="Enter Email">
+        </form>
+        <p>Name: <span id="outName"></span></p>
+        <p>Email: <span id="outEmail"></span></p>
+    </div>
+    
+    <div id="skillBars">
+        <h2>Skill Levels</h2>
+        <p>HTML</p>
+        <div class="barBox"><div class="bar" data-level="90"></div></div>
+        <p>CSS</p>
+        <div class="barBox"><div class="bar" data-level="75"></div></div>
+        <p>JavaScript</p>
+        <div class="barBox"><div class="bar" data-level="60"></div></div>
+        <p>jQuery</p>
+        <div class="barBox"><div class="bar" data-level="40"></div></div>
+        <br>
+        <button id="animateSkills">Animate My Skills</button>
+    </div>
+</body>
+</html>
